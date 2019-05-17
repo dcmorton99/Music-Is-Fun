@@ -2,7 +2,16 @@ import ItunesService from "./itunes-service.js";
 //Private
 const itunesService = new ItunesService()
 
-function drawSongs() {
+function _drawSongs() {
+
+  let songs = itunesService.Songs
+  let template = ''
+  for (let i = 0; i < songs.length; i++) {
+    let song = songs[i];
+    template += song.Template
+  }
+  document.getElementById('songs').innerHTML = template;
+
   //changes button back to GET MUSIC once songs are loaded
   document.querySelector('#get-music-button').textContent = 'GET MUSIC'
   console.log(itunesService.Songs)
@@ -14,6 +23,7 @@ function drawSongs() {
 class ItunesController {
   constructor() {
     //BE SURE TO REGISTER YOUR SUBSCRIBERS!!!!!!!
+    itunesService.addSubscriber('songs', _drawSongs)
   }
 
 
@@ -25,6 +35,8 @@ class ItunesController {
     document.querySelector('#get-music-button').textContent = 'LOADING....'
     itunesService.getMusicByArtist(artist)
   }
+
+
 }
 
 
