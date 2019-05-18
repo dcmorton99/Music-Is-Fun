@@ -12,20 +12,17 @@
 </head>
 
 <body class="container-fluid">
-    <div class="row">
-        <div class="col d-flex justify-content-center">
-            <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-                <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-                <div class="form-group">
-                    <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-                    <button type="submit" class="btn btn-primary btn-block" id="get-music-button">Get Music</button>
-                </div>
-            </form>
-        </div>
+    <div class="row justify-content-center">
+        <form class="form col-6" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+            <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+            <div class="form">
+                <input type="text" class="form-control mt-5 mb-5" name="artist" placeholder="Artist Name" />
+                <button type="submit" class="btn btn-block mb-5" id="get-music-button">Get
+                    Music</button>
+            </div>
+        </form>
     </div>
     <div class="row" id="songs">
-
-
 
     </div>
 
