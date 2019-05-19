@@ -9,8 +9,8 @@ body {
 #get-music-button {
   background: linear-gradient(90deg, #656b6b, #e4e3e1);
   text-transform: uppercase;
-  font-family: Stylish;
-  font-size:9vh;
+  font-family: Kodchasan, sans-serif;
+  font-size:7vh;
   text-shadow: 2px 2px black;
   border-width: 2px;
   border-color: black;
