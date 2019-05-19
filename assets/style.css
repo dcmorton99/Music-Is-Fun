@@ -7,7 +7,19 @@ body {
   }
 
 #get-music-button {
-  background-color: rgb(184, 6, 44);
-  
-}
+  background: linear-gradient(90deg, #656b6b, #e4e3e1);
+  text-transform: uppercase;
+  font-family: Stylish;
+  font-size:9vh;
+  text-shadow: 2px 2px black;
+  border-width: 2px;
+  border-color: black;
+    }
+
+#get-music-button:hover {
+  color: #fe019a;
+  box-shadow: 0px 5px 60px rgba(255, 4, 144, 0.4)
+  }
+
+
   

@@ -13,7 +13,7 @@ function _drawSongs() {
   document.getElementById('songs').innerHTML = template;
 
   //changes button back to GET MUSIC once songs are loaded
-  document.querySelector('#get-music-button').textContent = 'GET MUSIC'
+  document.querySelector('#get-music-button').textContent = 'GET THOSE JAMS!'
   console.log(itunesService.Songs)
 
 }
@@ -35,6 +35,7 @@ class ItunesController {
     document.querySelector('#get-music-button').textContent = 'LOADING....'
     itunesService.getMusicByArtist(artist)
   }
+
 
 
 }

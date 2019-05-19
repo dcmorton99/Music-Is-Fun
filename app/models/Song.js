@@ -19,7 +19,7 @@ export default class Song {
             <h2>${this.artist}</h2>
             <h3>${this.title}</h3>
             <h5>$${this.price}</h5>
-            <audio controls>
+            <audio controls id="play-sound">
                 <source src="${this.preview}" type="audio/mp3">
             </audio>
         </div>
